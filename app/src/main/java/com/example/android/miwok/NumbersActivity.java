@@ -2,7 +2,6 @@ package com.example.android.miwok;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -14,21 +13,26 @@ public class NumbersActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_numbers);
 
-        ArrayList<String> words = new ArrayList<String>();
+        ArrayList<Word> words = new ArrayList<Word>();
 
-        words.add("one");
-        words.add("rwo");
-        words.add("three");
-        words.add("four");
-        words.add("five");
+        words.add(new Word("one", "eik"));
+        words.add(new Word("two", "do"));
+        words.add(new Word("three", "teen"));
+        words.add(new Word("four", "chaar"));
+        words.add(new Word("five", "paanch"));
 
-        for(int i=0; i<100000; i++) {
+
+
+        for(int i=0; i<0; i++) {
             words.add(words.get(i%5));
         }
 
         System.out.println("I am in NumbersActivity " + words.size());
 
-        ArrayAdapter<String> itemsAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, words);
+        //ArrayAdapter<String> itemsAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, words);
+        WordAdapter itemsAdapter =
+                new WordAdapter(this,
+                        R.layout.list_item, words);
         ListView listView = (ListView) findViewById(R.id.list);
         listView.setAdapter(itemsAdapter);
 
