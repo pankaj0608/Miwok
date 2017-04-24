@@ -3,43 +3,34 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
-              android:orientation="vertical"
-              android:padding="0dp">
+              android:orientation="horizontal"
+              android:padding="16dp">
+
+    <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+               android:id="@+id/image"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@mipmap/ic_launcher"/>
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                   android:layout_width="match_parent"
-                  android:layout_height="wrap_content"
-                  android:orientation="horizontal"
-                  android:padding="10dp">
-
-
-        <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
-                   android:id="@+id/posText"
-                   android:layout_width="0dp"
-                   android:layout_weight="1"
-                   android:layout_height="wrap_content"
-                   android:gravity="left"
-                   android:src="@mipmap/ic_launcher"/>
-
+                  android:layout_height="match_parent"
+                  android:orientation="vertical"
+                  android:paddingLeft="24dp">
 
         <TextView xmlns:android="http://schemas.android.com/apk/res/android"
                   android:id="@+id/engText"
-                  android:layout_width="0dp"
-                  android:layout_weight="2"
+                  android:layout_width="match_parent"
                   android:layout_height="wrap_content"
-                  android:gravity="center_horizontal"
-                  android:textAppearance="?android:attr/textAppearanceLarge"
+                  android:textSize="20dp"
                   android:textColor="@color/category_colors"/>
 
         <TextView xmlns:android="http://schemas.android.com/apk/res/android"
                   android:id="@+id/hindiText"
-                  android:layout_width="0dp"
-                  android:layout_weight="2"
+                  android:layout_width="match_parent"
                   android:layout_height="wrap_content"
-                  android:gravity="center_horizontal"
-                  android:textAppearance="?android:attr/textAppearanceLarge"
+                  android:textSize="20dp"
                   android:textColor="@color/category_family"/>
-
 
     </LinearLayout>
 </LinearLayout>
