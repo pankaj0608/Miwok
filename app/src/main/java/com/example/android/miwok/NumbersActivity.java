@@ -19,13 +19,17 @@ public class NumbersActivity extends AppCompatActivity {
         words.add(new Word("two", "दो"));
         words.add(new Word("three", "तीन"));
         words.add(new Word("four", "चार"));
-        words.add(new Word("five", "पंज"));
+        words.add(new Word("five", "पांच"));
+        words.add(new Word("six", "छह"));
+        words.add(new Word("seven", "सात"));
+        words.add(new Word("eight", "आठ"));
+        words.add(new Word("nine", "नौ"));
+        words.add(new Word("ten", "दस"));
 
 
-
-        for(int i=0; i<0; i++) {
-            words.add(words.get(i%5));
-        }
+//        for(int i=0; i<0; i++) {
+//            words.add(words.get(i%5));
+//        }
 
         System.out.println("I am in NumbersActivity " + words.size());
 
@@ -35,12 +39,6 @@ public class NumbersActivity extends AppCompatActivity {
                         R.layout.list_item, words);
         ListView listView = (ListView) findViewById(R.id.list);
         listView.setAdapter(itemsAdapter);
-
-//        for(int i=0; i<words.size(); i++) {
-//            wordView = new TextView(this);
-//            wordView.setText(words.get(i));
-//            rootView.addView(wordView);
-//        }
 
     }
 }
