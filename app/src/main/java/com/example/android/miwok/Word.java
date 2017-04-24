@@ -7,25 +7,24 @@ public class Word {
 
     String eng;
     String hindi;
+    String image;
 
     Word(String aEng, String aHindi) {
         this.eng = aEng;
         this.hindi = aHindi;
+        this.image = "\"number_";
     }
 
     public String getEng() {
         return eng;
     }
 
-    public void setEng(String eng) {
-        this.eng = eng;
-    }
-
     public String getHindi() {
+
         return hindi;
     }
 
-    public void setHindi(String hindi) {
-        this.hindi = hindi;
+    public String getImage() {
+        return  this.image + this.eng + ".png";
     }
 }
