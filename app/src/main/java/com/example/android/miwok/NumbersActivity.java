@@ -15,11 +15,11 @@ public class NumbersActivity extends AppCompatActivity {
 
         ArrayList<Word> words = new ArrayList<Word>();
 
-        words.add(new Word("one", "eik"));
-        words.add(new Word("two", "do"));
-        words.add(new Word("three", "teen"));
-        words.add(new Word("four", "chaar"));
-        words.add(new Word("five", "paanch"));
+        words.add(new Word("one", "एक"));
+        words.add(new Word("two", "दो"));
+        words.add(new Word("three", "तीन"));
+        words.add(new Word("four", "चार"));
+        words.add(new Word("five", "पंज"));
 
 
 
