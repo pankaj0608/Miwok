@@ -15,16 +15,16 @@ public class NumbersActivity extends AppCompatActivity {
 
         ArrayList<Word> words = new ArrayList<Word>();
 
-        words.add(new Word("one", "एक"));
-        words.add(new Word("two", "दो"));
-        words.add(new Word("three", "तीन"));
-        words.add(new Word("four", "चार"));
-        words.add(new Word("five", "पांच"));
-        words.add(new Word("six", "छह"));
-        words.add(new Word("seven", "सात"));
-        words.add(new Word("eight", "आठ"));
-        words.add(new Word("nine", "नौ"));
-        words.add(new Word("ten", "दस"));
+        words.add(new Word("one", "एक", R.drawable.number_one));
+        words.add(new Word("two", "दो", R.drawable.number_two));
+        words.add(new Word("three", "तीन", R.drawable.number_three));
+        words.add(new Word("four", "चार", R.drawable.number_four));
+        words.add(new Word("five", "पांच", R.drawable.number_five));
+        words.add(new Word("six", "छह", R.drawable.number_six));
+        words.add(new Word("seven", "सात", R.drawable.number_seven));
+        words.add(new Word("eight", "आठ", R.drawable.number_eight));
+        words.add(new Word("nine", "नौ", R.drawable.number_nine));
+        words.add(new Word("ten", "दस", R.drawable.number_ten));
 
 
 //        for(int i=0; i<0; i++) {

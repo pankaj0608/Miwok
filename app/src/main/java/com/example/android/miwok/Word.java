@@ -7,12 +7,12 @@ public class Word {
 
     String eng;
     String hindi;
-    String image;
+    int imageResourceId;
 
-    Word(String aEng, String aHindi) {
+    Word(String aEng, String aHindi, int aImageResourceId) {
         this.eng = aEng;
         this.hindi = aHindi;
-        this.image = "\"number_";
+        this.imageResourceId = aImageResourceId;
     }
 
     public String getEng() {
@@ -24,7 +24,8 @@ public class Word {
         return hindi;
     }
 
-    public String getImage() {
-        return  this.image + this.eng + ".png";
+    public int getImageResourceId() {
+        return imageResourceId;
     }
+
 }
