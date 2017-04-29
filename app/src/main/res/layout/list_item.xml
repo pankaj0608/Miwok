@@ -3,34 +3,42 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
-              android:orientation="horizontal"
-              android:padding="16dp">
+              android:background="@color/tan_background"
+              android:minHeight="@dimen/list_item_height"
+              android:orientation="horizontal">
 
-    <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
-               android:id="@+id/image"
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:src="@mipmap/ic_launcher"/>
+    <ImageView
+            android:id="@+id/image"
+            android:layout_width="@dimen/list_item_height"
+            android:layout_height="@dimen/list_item_height" />
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                  android:layout_width="match_parent"
-                  android:layout_height="match_parent"
-                  android:orientation="vertical"
-                  android:paddingLeft="24dp">
+
+    <LinearLayout
+            android:id="@+id/text_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/category_numbers"
+            android:orientation="vertical"
+            android:paddingLeft="16dp">
 
         <TextView xmlns:android="http://schemas.android.com/apk/res/android"
                   android:id="@+id/engText"
                   android:layout_width="match_parent"
-                  android:layout_height="wrap_content"
-                  android:textSize="20dp"
-                  android:textColor="@color/category_colors"/>
+                  android:layout_height="0dp"
+                  android:layout_weight="1"
+                  android:gravity="bottom"
+                  android:textAppearance="?android:textAppearanceMedium"
+                  android:textColor="@android:color/white"
+                  android:textStyle="bold"/>
 
         <TextView xmlns:android="http://schemas.android.com/apk/res/android"
                   android:id="@+id/hindiText"
                   android:layout_width="match_parent"
-                  android:layout_height="wrap_content"
-                  android:textSize="20dp"
-                  android:textColor="@color/category_family"/>
+                  android:layout_height="0dp"
+                  android:layout_weight="1"
+                  android:gravity="top"
+                  android:textAppearance="?android:textAppearanceMedium"
+                  android:textColor="@android:color/white"/>
 
     </LinearLayout>
 </LinearLayout>

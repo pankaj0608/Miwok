@@ -1,7 +1,6 @@
 package com.example.android.miwok;
 
 import android.app.Activity;
-import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -38,10 +37,10 @@ public class WordAdapter extends ArrayAdapter<Word> {
         // Get the {@link AndroidFlavor} object located at this position in the list
         Word currentWord = getItem(position);
 
-        if(position%2 ==0)
-            listItemView.setBackgroundColor(Color.parseColor("#EDEEF9"));
-        else
-            listItemView.setBackgroundColor(Color.parseColor("#FFFFFF"));
+//        if(position%2 ==0)
+//            listItemView.setBackgroundColor(Color.parseColor("#EDEEF9"));
+//        else
+//            listItemView.setBackgroundColor(Color.parseColor("#FFFFFF"));
 
         // Find the TextView in the list_item.xml layout with the ID version_name
         TextView engTextView = (TextView) listItemView.findViewById(R.id.engText);
