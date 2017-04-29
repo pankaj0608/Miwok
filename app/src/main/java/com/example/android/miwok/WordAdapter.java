@@ -17,16 +17,18 @@ import java.util.ArrayList;
 public class WordAdapter extends ArrayAdapter<Word> {
 
     private int mColorResourceId;
+    private int mListItemColorResourceId;
 
 
     public WordAdapter(Activity context, int resource,
-                       ArrayList<Word> words, int colorResourceId) {
+                       ArrayList<Word> words, int colorResourceId, int listItemColorResourceId) {
         // Here, we initialize the ArrayAdapter's internal storage for the context and the list.
         // the second argument is used when the ArrayAdapter is populating a single TextView.
         // Because this is a custom adapter for two TextViews and an ImageView, the adapter is not
         // going to use this second argument, so it can be any value. Here, we used 0.
         super(context, resource, words);
         this.mColorResourceId = colorResourceId;
+        this.mListItemColorResourceId = listItemColorResourceId;
     }
 
 
@@ -45,6 +47,12 @@ public class WordAdapter extends ArrayAdapter<Word> {
         int color = ContextCompat.getColor(getContext(), mColorResourceId);
         // Set the background color of the text container View
         textContainer.setBackgroundColor(color);
+
+        // Find the color that the resource ID maps to
+        int liatItemcolor = ContextCompat.getColor(getContext(), mListItemColorResourceId);
+        // Set the theme color for the list item
+        listItemView.setBackgroundColor(liatItemcolor);
+
 
         // Get the {@link AndroidFlavor} object located at this position in the list
         Word currentWord = getItem(position);
