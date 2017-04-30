@@ -8,11 +8,13 @@ public class Word {
     String eng;
     String hindi;
     int imageResourceId;
+    int audioResourceId;
 
-    Word(String aEng, String aHindi, int aImageResourceId) {
+    Word(String aEng, String aHindi, int aImageResourceId, int aAudioResourceId) {
         this.eng = aEng;
         this.hindi = aHindi;
         this.imageResourceId = aImageResourceId;
+        this.audioResourceId = aAudioResourceId;
     }
 
     public String getEng() {
@@ -28,4 +30,7 @@ public class Word {
         return imageResourceId;
     }
 
+    public int getAudioResourceId() {
+        return audioResourceId;
+    }
 }
