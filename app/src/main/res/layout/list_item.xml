@@ -4,6 +4,7 @@
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
               android:background="@color/tan_background"
+              android:onClick="playMyNumber"
               android:minHeight="@dimen/list_item_height"
               android:orientation="horizontal">
 
@@ -17,27 +18,35 @@
             android:id="@+id/text_container"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
+            android:orientation="horizontal"
             android:paddingLeft="16dp">
 
         <TextView xmlns:android="http://schemas.android.com/apk/res/android"
                   android:id="@+id/engText"
-                  android:layout_width="match_parent"
-                  android:layout_height="0dp"
+                  android:layout_height="match_parent"
+                  android:layout_width="0dp"
                   android:layout_weight="1"
-                  android:gravity="bottom"
-                  android:textAppearance="?android:textAppearanceMedium"
+                  android:gravity="center_vertical"
+                  android:textAppearance="?android:textAppearanceLarge"
                   android:textColor="@android:color/white"
                   android:textStyle="bold"/>
 
         <TextView xmlns:android="http://schemas.android.com/apk/res/android"
                   android:id="@+id/hindiText"
-                  android:layout_width="match_parent"
-                  android:layout_height="0dp"
-                  android:layout_weight="1"
-                  android:gravity="top"
-                  android:textAppearance="?android:textAppearanceMedium"
+                  android:layout_height="match_parent"
+                  android:layout_width="0dp"
+                  android:layout_weight="3"
+                  android:gravity="center_vertical"
+                  android:textAppearance="?android:textAppearanceLarge"
                   android:textColor="@android:color/white"/>
+
+        <!--<ImageView-->
+                <!--android:id="@+id/image_sound"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="0dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:gravity="top"-->
+                <!--android:src="@drawable/color_black"/>-->
 
     </LinearLayout>
 </LinearLayout>
