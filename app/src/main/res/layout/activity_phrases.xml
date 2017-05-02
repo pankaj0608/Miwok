@@ -15,5 +15,5 @@
             android:id="@+id/Numbers"
             style="@style/CategoryStyle"
             android:background="@color/category_phrases"
-            android:text="I am in Phrases Activity - To be done"/>
+            android:text="I am in Phrases Activity - To do"/>
 </RelativeLayout>
