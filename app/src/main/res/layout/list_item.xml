@@ -37,7 +37,8 @@
                   android:layout_weight="1.2"
                   android:gravity="center_vertical"
                   android:textAppearance="?android:textAppearanceLarge"
-                  android:textColor="@android:color/white"/>
+                  android:textColor="@android:color/white"
+                  android:textStyle="bold"/>
 
         <ImageView
                 android:id="@+id/image_sound"
