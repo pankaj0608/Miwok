@@ -54,8 +54,8 @@ public class NumbersFragment extends Fragment {
 
         final ArrayList<Word> words = new ArrayList<Word>();
 
-        words.add(new Word("OneF", "एक", R.drawable.number_one, R.raw.one));
-        words.add(new Word("TwoF", "दो", R.drawable.number_two, R.raw.two));
+        words.add(new Word("One", "एक", R.drawable.number_one, R.raw.one));
+        words.add(new Word("Two", "दो", R.drawable.number_two, R.raw.two));
         words.add(new Word("Three", "तीन", R.drawable.number_three, R.raw.three));
         words.add(new Word("Four", "चार", R.drawable.number_four, R.raw.four));
         words.add(new Word("Five", "पांच", R.drawable.number_five, R.raw.five));

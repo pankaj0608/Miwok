@@ -9,6 +9,9 @@ import android.support.v4.app.FragmentPagerAdapter;
  */
 public class SimpleFragmentPagerAdapter extends FragmentPagerAdapter {
 
+    final int PAGE_COUNT = 4;
+    private String tabTitles[] = new String[] { "Numbers", "Family", "Colors", "Phrases" };
+
     public SimpleFragmentPagerAdapter(FragmentManager fm) {
         super(fm);
     }
@@ -19,7 +22,7 @@ public class SimpleFragmentPagerAdapter extends FragmentPagerAdapter {
             return new NumbersFragment();
         } else if (position == 1){
             return new FamilyFragment();
-        }else if (position == 21){
+        }else if (position == 2){
             return new ColorsFragment();
         } else {
             return new PhrasesFragment();
@@ -28,6 +31,13 @@ public class SimpleFragmentPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        return 3;
+
+        return PAGE_COUNT;
+    }
+
+    @Override
+    public CharSequence getPageTitle(int position) {
+        // Generate title based on item position
+        return tabTitles[position];
     }
 }
